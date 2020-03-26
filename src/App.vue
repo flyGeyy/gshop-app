@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
   <router-view/>
   <footer-guide/>
   </div>
@@ -15,6 +15,10 @@
     }
 </script>
 
-<style scoped style="stylus" rel="stylesheet/stylus">
+<style lang='less'>
+#app{
+  position: relative;
+  height: 100%;
+}
 
 </style>
