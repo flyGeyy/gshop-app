@@ -13,7 +13,7 @@
                 <i class="iconfont icon-dingdan"></i>
                 <span>订单</span>
             </span>
-            <span class="guide-item" :class="{on:'/pofile'===$route.path}" @click="goTo('/pofile')">
+            <span class="guide-item" :class="{on:'/profile'===$route.path}" @click="goTo('/profile')">
                 <i class="iconfont icon-geren"></i>
                 <span>我的</span> 
             </span>
@@ -43,11 +43,11 @@
     width: 100%;
     display: flex;
     .guide-item{
-     display: flex;
-     flex: 1;
-     flex-direction: column;
-    justify-content:center;
-    align-items: center;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
     //    text-align: center; 
        height: 50px;
        padding-top: 6px;
@@ -60,6 +60,7 @@
        }
        span{
            font-size: 12px;
+           margin-top: 5px;
 
        }
        &.on{
@@ -68,19 +69,6 @@
 
     }
 
-}
-
-.border-top-1px::before{
-        content:'';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 1px;
-        background-color: #e4e4e4;
-        transform: scaleY(0.5);
-        
-    
 }
 
 </style>
